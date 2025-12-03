@@ -50,6 +50,7 @@ const projectsData: { [key: string]: any } = {
       "Web-based frontend (Flask) to display results and visualizations"
     ],
     techStack: ["Python", "Flask", "Pandas", "Gemini API", "NLU", "HTML/CSS"],
+    github: "https://github.com/Mohammed-Zain-py/Speech-driven-NLU-framework",
   },
   "4": {
     title: "Sonar-Based Object Classification",
