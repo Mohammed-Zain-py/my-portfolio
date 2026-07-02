@@ -4,22 +4,35 @@ const competencies = [
   {
     icon: Code2,
     title: "Languages",
-    skills: ["Python", "SQL"]
+    skills: ["Python", "SQL", "HTML", "CSS", "JavaScript"]
   },
   {
     icon: Boxes,
     title: "Libraries & Frameworks",
-    skills: ["Pandas", "Scikit-learn", "Flask", "Pillow (PIL)"]
+    skills: ["FastAPI", "Flask", "Streamlit", "Pandas", "Chart.js"]
   },
   {
     icon: Database,
-    title: "Key Concepts",
-    skills: ["Machine Learning", "Data Science", "Cryptography", "API Integration", "NLU"]
+    title: "Core Skills",
+    skills: [
+      "System Design",
+      "REST API Development",
+      "Machine Learning",
+      "Database Design",
+      "Cryptography",
+      "AI Integration"
+    ]
   },
   {
     icon: TerminalSquare,
     title: "Tools & Technologies",
-    skills: ["Git", "GitHub", "VS Code", "Command Line", "REST APIs"]
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "MySQL",
+      "SQLite"
+    ]
   },
 ];
 

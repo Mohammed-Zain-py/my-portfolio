@@ -5,60 +5,72 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import vaultImage from '@/assets/password-vault.png';
+import legacyATSImage from '@/assets/legacyATSImage.png';
 import handwritingImage from '@/assets/handwriting-generator.png';
 import voiceAnalyticsImage from '@/assets/voice-analytics.png';
 import sonarImage from '@/assets/sonar-classification.png';
 import movieImage from '@/assets/movie-recommendation.png';
 import gamesImage from '@/assets/mini-games.png';
 
-const categories = ["All", "Machine Learning", "Data Analysis", "CLI & Automation"];
+// The buttons that will actually appear on the screen
+const categories = ["All", "Full Stack Development", "Data Science & AIML"];
 
 const allProjects = [
   {
     id: 1,
-    title: "Secure Command-Line Password Vault",
-    description: "A unified command-line tool to generate strong, unique passwords and store them securely using Fernet encryption.",
-    category: "CLI & Automation",
-    tags: ["Python", "Cryptography", "Fernet", "Security", "CLI"],
-    image: vaultImage
+    title: "LegacyATS",
+    description: "An AI-powered ATS resume analyzer that evaluates resumes against job descriptions, generates compatibility scores, identifies missing keywords, and provides actionable optimization suggestions.",
+    category: "Full Stack Development",
+    tags: ["Python","FastAPI","Streamlit","Gemini API","PDF Processing","REST API"],
+    image: legacyATSImage
   },
   {
     id: 2,
-    title: "Personalized Handwriting Generator",
-    description: "An application that converts digital text into a realistic, personalized handwriting image using a custom-made font.",
-    category: "CLI & Automation",
-    tags: ["Python", "Pillow", "Image Processing", "Automation"],
-    image: handwritingImage
+    title: "Secure Password Vault",
+    description: "A self-hosted password manager that securely generates, encrypts, stores, and manages credentials through a web interface using Fernet encryption.",
+    category: "Full Stack Development",
+    tags: ["Python", "FastAPI", "Streamlit", "MySQL", "Cryptography"],
+    image: vaultImage
   },
   {
     id: 3,
     title: "Speech-Driven NLU Framework for Data Analytics",
-    description: "An intelligent chatbot that translates natural voice commands into executable Python code to query and analyze datasets instantly.",
-    category: "Data Analysis",
-    tags: ["Python", "Flask", "Pandas", "Gemini API", "NLU"],
+    description: "A web application that enables users to analyze CSV datasets through natural language using text or voice by generating and executing Pandas operations.",
+    category: "Full Stack Development",
+    tags: ["Python", "Flask", "Pandas", "Gemini API", "SQLite"],
     image: voiceAnalyticsImage
   },
   {
     id: 4,
+    title: "Personalized Handwriting Generator",
+    description: "An application that converts digital text into a realistic, personalized handwriting image using a custom-made font.",
+    // Hidden from specific filters
+    category: "CLI & Automation", 
+    tags: ["Python", "Pillow", "Image Processing", "Automation"],
+    image: handwritingImage
+  },
+  {
+    id: 5,
     title: "Sonar-Based Object Classification",
     description: "A machine learning model to distinguish between metallic and non-metallic objects from sonar reflection data.",
-    category: "Machine Learning",
+    category: "Data Science & AIML",
     tags: ["Python", "Pandas", "Scikit-learn", "Machine Learning"],
     image: sonarImage
   },
   {
-    id: 5,
+    id: 6,
     title: "Movie Recommendation System",
     description: "A content-based filtering engine that recommends movies based on plot keywords, genres, and other metadata.",
-    category: "Machine Learning",
+    category: "Data Science & AIML",
     tags: ["Python", "Pandas", "Scikit-learn", "Data Science", "NLP"],
     image: movieImage
   },
   {
-    id: 6,
+    id: 7,
     title: "Mini Game Collection",
-    description: "A collection of interactive, text-based games built to showcase fundamental programming and object-oriented principles.",
-    category: "Software Development",
+    description: "A collection of interactive, text-based games built to learn fundamental programming and object-oriented principles.",
+    // Hidden from specific filters
+    category: "Core Python", 
     tags: ["Python", "OOP", "CLI"],
     image: gamesImage
   }

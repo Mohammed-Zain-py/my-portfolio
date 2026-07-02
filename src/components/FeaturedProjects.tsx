@@ -3,29 +3,29 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight, Github, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import vaultImage from '@/assets/password-vault.png';
-import handwritingImage from '@/assets/handwriting-generator.png'
+import legacyATSImage from '@/assets/legacyATSImage.png';
 import voiceAnalyticsImage from '@/assets/voice-analytics.png'
 
 const projects = [
   {
-    id: 1,
-    title: "Secure Command-Line Password Vault",
-    description: "A unified command-line tool to generate strong, unique passwords and store them securely using Fernet encryption.",
-    tags: ["Python", "Cryptography", "Fernet", "Security", "CLI"],
-    image: vaultImage
+  id: 1,
+  title: "LegacyATS",
+  description: "An AI-powered ATS resume analyzer that compares resumes with job descriptions, scores compatibility, identifies missing keywords, and provides actionable improvement suggestions.",
+  tags: ["Python","FastAPI","Streamlit","Gemini API","PDF Processing","REST API"],
+  image: legacyATSImage
   },
   {
     id: 2,
-    title: "Personalized Handwriting Generator",
-    description: "An application that converts digital text into a realistic, personalized handwriting image, mimicking natural stroke variations",
-    tags: ["Python", "Pillow", "Image Processing", "Automation"],
-    image: handwritingImage
+    title: "Secure Password Vault",
+    description: "A self-hosted password manager that securely generates, encrypts, stores, and manages credentials using Fernet encryption.",
+    tags: ["Python", "FastAPI", "Streamlit", "MySQL", "Cryptography"],
+    image: vaultImage
   },
   {
     id: 3,
     title: "Speech-Driven NLU Framework for Data Analytics",
-    description: "An intelligent chatbot that translates natural voice commands into executable Python code to query and analyze datasets instantly.",
-    tags: ["Python", "Flask", "Pandas", "Gemini API", "NLU"],
+    description: "A web application that enables users to analyze CSV datasets through natural language using text or voice by generating executable Pandas operations.",
+    tags: ["Python", "Flask", "Pandas", "Gemini API", "SQLite"],
     image: voiceAnalyticsImage
   }
 ];

@@ -23,20 +23,22 @@ const About = () => {
             <div className="space-y-6 animate-fade-in-up">
               <div className="prose prose-invert max-w-none">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                 Hello! I'm a final-year Artificial Intelligence and Machine Learning Engineering student 
-                 with a deep passion for transforming complex theory into practical, real-world applications. 
-                 My journey into technology is driven by a desire to build functional solutions that solve tangible problems, 
-                 which you can see in the end-to-end projects I've developed.
+                 Hello! I'm a 2026 Artificial Intelligence and Machine Learning Engineering graduate
+                 who enjoys building software that solves real problems. I like taking an idea from scratch, 
+                 understanding how it works under the hood, and turning it into something people can actually use.
                 </p>
+
                 <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                  My unique strength lies in bridging the gap between academic concepts and functional code. 
-                  Whether it's developing security tools, creating automation scripts, or building intelligent systems that understand natural language, 
-                  I am committed to writing clean, efficient code and seeing a project through from idea to execution.
+                  Most of my work revolves around Python, backend development, and AI-powered applications.
+                  From building a secure password manager and an ATS resume analyzer to developing a natural language interface for data analytics,
+                  I enjoy creating projects that combine practical engineering with thoughtful problem-solving.
 
                 </p>
+
                 <p className="text-lg text-muted-foreground leading-relaxed mt-4">
-                  I am actively seeking opportunities where I can apply my skills in Python, machine learning, and API integration to contribute to a forward-thinking team. 
-                  I am eager to help build innovative software and data-driven solutions.
+                  I'm currently looking for opportunities as a Software Developer or Python Developer,
+                  where I can learn from experienced engineers, contribute to meaningful products,
+                  and continue building software that makes an impact.
                 </p>
               </div>
             </div>
@@ -50,10 +52,23 @@ const About = () => {
                 <div className="space-y-3 flex-1">
                   <h2 className="font-mono text-2xl font-bold text-primary">Education</h2>
                   <div className="space-y-2">
-                    <h3 className="text-xl font-semibold">Bachelor of Engineering in Artificial Intelligence & Machine Learning</h3>
-                    <p className="text-muted-foreground">The Oxford College of Engineering (Visvesvaraya Technological University)</p>
-                    <p className="text-muted-foreground">Expected Graduation: 2026 </p>
-                    <p className="text-muted-foreground">CGPA: 8 / 10.0</p>
+                    <h3 className="text-xl font-semibold">
+                      Bachelor of Engineering in Artificial Intelligence & Machine Learning
+                    </h3>
+                    <p className="text-muted-foreground">
+                      The Oxford College of Engineering (Visvesvaraya Technological University)
+                    </p>
+                    <p className="text-muted-foreground">Graduated: 2026</p>
+                    <p className="text-muted-foreground">CGPA: 8.1 / 10.0</p>
+                  </div>
+
+                  <div className="pt-4 border-t border-border/40">
+                    <h4 className="font-semibold mb-2">Previous Education</h4>
+
+                    <div className="space-y-2 text-muted-foreground">
+                      <p><span className="text-muted-foreground">Pre-University (PUC):</span> 90%</p>
+                      <p><span className="text-muted-foreground">SSLC (10th):</span> 92%</p>
+                    </div>
                   </div>
                   <div className="pt-4">
                     <h4 className="font-semibold mb-2">Relevant Coursework:</h4>

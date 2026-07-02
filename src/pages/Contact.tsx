@@ -30,20 +30,20 @@ const Contact = () => {
             <div className="space-y-4">
               {/* Email Card */}
               <Card className="p-6 border-border/40 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all">
-                <a href="mailto:mdzainaiml2026@gmail.com" className="flex items-center gap-4 group">
+                <a href="mailto:mdzain0026@gmail.com" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <div className="text-sm text-muted-foreground">mdzainaiml2026@gmail.com</div>
+                    <div className="text-sm text-muted-foreground">mdzain0026@gmail.com</div>
                   </div>
                 </a>
               </Card>
               
               {/* LinkedIn Card */}
               <Card className="p-6 border-border/40 bg-card/50 backdrop-blur-sm hover:border-primary/50 transition-all">
-                <a href="https://www.linkedin.com/in/mohammed-zain-aiml/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                <a href="https://www.linkedin.com/in/mohammed-zain-py" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Linkedin className="h-6 w-6 text-primary" />
                   </div>
