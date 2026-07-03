@@ -35,7 +35,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <Button size="lg" variant="outline" className="border-primary/50 hover:bg-primary/10" asChild>
-                <a href="https://www.linkedin.com/in/mohammed-zain-aiml/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/mohammed-zain-py/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2 h-5 w-5" />
                   Connect on LinkedIn
                 </a>
