@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import vaultImage from '@/assets/password-vault.png';
+import loanCopilotImage from '@/assets/loanCopilotImage.png';
 import legacyATSImage from '@/assets/legacyATSImage.png';
 import handwritingImage from '@/assets/handwriting-generator.png';
 import voiceAnalyticsImage from '@/assets/voice-analytics.png';
@@ -24,14 +25,16 @@ const allProjects = [
     tags: ["Python","FastAPI","Streamlit","Gemini API","PDF Processing","REST API"],
     image: legacyATSImage
   },
+  
   {
     id: 2,
-    title: "Secure Password Vault",
-    description: "A self-hosted password manager that securely generates, encrypts, stores, and manages credentials through a web interface using Fernet encryption.",
-    category: "Full Stack Development",
-    tags: ["Python", "FastAPI", "Streamlit", "MySQL", "Cryptography"],
-    image: vaultImage
+    title: "GenAI Loan Prediction System",
+    description: "A hybrid loan approval system combining deterministic rules, XGBoost machine learning, and SHAP explainability with a RAG pipeline to generate policy-compliant credit decisions.",
+    category: "Data Science & AIML",
+    tags: ["Python", "XGBoost", "SHAP", "LangChain", "ChromaDB", "Streamlit", "Gemini API"],
+    image: loanCopilotImage
   },
+
   {
     id: 3,
     title: "Speech-Driven NLU Framework for Data Analytics",
@@ -42,6 +45,14 @@ const allProjects = [
   },
   {
     id: 4,
+    title: "Secure Password Vault",
+    description: "A self-hosted password manager that securely generates, encrypts, stores, and manages credentials through a web interface using Fernet encryption.",
+    category: "Full Stack Development",
+    tags: ["Python", "FastAPI", "Streamlit", "MySQL", "Cryptography"],
+    image: vaultImage
+  },
+  {
+    id: 5,
     title: "Personalized Handwriting Generator",
     description: "An application that converts digital text into a realistic, personalized handwriting image using a custom-made font.",
     // Hidden from specific filters
@@ -50,7 +61,7 @@ const allProjects = [
     image: handwritingImage
   },
   {
-    id: 5,
+    id: 6,
     title: "Sonar-Based Object Classification",
     description: "A machine learning model to distinguish between metallic and non-metallic objects from sonar reflection data.",
     category: "Data Science & AIML",
@@ -58,7 +69,7 @@ const allProjects = [
     image: sonarImage
   },
   {
-    id: 6,
+    id: 7,
     title: "Movie Recommendation System",
     description: "A content-based filtering engine that recommends movies based on plot keywords, genres, and other metadata.",
     category: "Data Science & AIML",
@@ -66,7 +77,7 @@ const allProjects = [
     image: movieImage
   },
   {
-    id: 7,
+    id: 8,
     title: "Mini Game Collection",
     description: "A collection of interactive, text-based games built to learn fundamental programming and object-oriented principles.",
     // Hidden from specific filters

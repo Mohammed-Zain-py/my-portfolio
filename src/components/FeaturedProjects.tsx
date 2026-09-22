@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Github, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
-import vaultImage from '@/assets/password-vault.png';
+import loanCopilotImage from '@/assets/loanCopilotImage.png';
 import legacyATSImage from '@/assets/legacyATSImage.png';
 import voiceAnalyticsImage from '@/assets/voice-analytics.png'
 
@@ -16,10 +16,11 @@ const projects = [
   },
   {
     id: 2,
-    title: "Secure Password Vault",
-    description: "A self-hosted password manager that securely generates, encrypts, stores, and manages credentials using Fernet encryption.",
-    tags: ["Python", "FastAPI", "Streamlit", "MySQL", "Cryptography"],
-    image: vaultImage
+    title: "GenAI Loan Prediction System",
+    description: "A hybrid loan approval system combining deterministic rules, XGBoost machine learning, and SHAP explainability with a RAG pipeline to generate policy-compliant credit decisions.",
+    category: "Data Science & AIML",
+    tags: ["Python", "XGBoost", "SHAP", "LangChain", "ChromaDB", "Streamlit", "Gemini API"],
+    image: loanCopilotImage
   },
   {
     id: 3,

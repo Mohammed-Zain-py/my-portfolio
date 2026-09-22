@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, ArrowLeft, Play } from "lucide-react";
 import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog";
 
+import loanCopilotImage from '@/assets/loanCopilotImage.png';
 import vaultImage from '@/assets/password-vault.png';
 import legacyATSImage from '@/assets/legacyATSImage.png';
 import handwritingImage from '@/assets/handwriting-generator.png';
@@ -36,19 +37,33 @@ const projectsData: { [key: string]: any } = {
   },
 
   "2": {
-    title: "Secure Password Vault",
-    image: vaultImage,
-    videoUrl: "https://res.cloudinary.com/uyvtqzym/video/upload/v1782842309/VN20260630_221231_kkxorv.mp4",
-    problem: "Managing dozens of online accounts often leads to weak or reused passwords, while storing credentials in plain text or third-party services introduces additional security risks.",
-    solution: "Built a self-hosted password vault with a web interface that securely generates, encrypts, stores, and manages credentials locally using authenticated access and encrypted storage.",
-    features: [
-      "Master password authentication for secure vault access",
-      "Fernet encryption for storing credentials securely",
-      "Generate, search, add, update, and delete saved passwords",
-      "Encrypted backup and restore with MySQL-backed storage"
-    ],
-    techStack: ["Python", "FastAPI", "Streamlit", "MySQL", "Cryptography (Fernet)"],
-    github: "https://github.com/Mohammed-Zain-py/python-password-vault",
+  title: "GenAI Loan Prediction System",
+  category: "Data Science & AIML",
+  image: loanCopilotImage,
+  videoUrl: "https://res.cloudinary.com/uyvtqzym/video/upload/v1790098076/Loan_Predictor_d5dzgr.mp4",
+  problem: "Traditional machine learning models for loan approval act as 'black boxes' that cannot explain their decisions to auditors, while purely LLM-based approaches hallucinate financial math and are too unpredictable for strict regulatory rules.",
+  solution: "Built a 4-layer architecture that processes applications through deterministic rules form the bank policy document, scores risk with XGBoost, visually explains decisions using SHAP, and drafts policy-compliant customer letters with the exact bank policy mentioned using a RAG pipeline.",
+  features: [
+    "Rejects invalid applications using a deterministic JSON rules engine",
+    "If Layer 1 is passed, then calculates the probability of default using an XGBoost classification model",
+    "Generates SHAP waterfall visualizations to audit feature-level decision drivers",
+    "Retrieves relevant bank policy from the uploaded policy document using a ChromaDB Vector Database",
+    "Drafts automated, RBI-compliant explanation letters with respect to the bank policy",
+    "Mitigates LLM hallucination by separating mathematical risk scoring from text generation",
+    "Protecttion against prompt injection through strictly controlled UI input components"
+  ],
+  techStack: [
+    "Python",
+    "Streamlit",
+    "XGBoost",
+    "SHAP",
+    "Pandas",
+    "Scikit-Learn",
+    "LangChain",
+    "ChromaDB",
+    "Google Gemini API"
+  ],
+  github: "https://github.com/Mohammed-Zain-py/loan-approval-rag"
   },
 
   "3": {
@@ -68,6 +83,22 @@ const projectsData: { [key: string]: any } = {
   },
 
   "4": {
+    title: "Secure Password Vault",
+    image: vaultImage,
+    videoUrl: "https://res.cloudinary.com/uyvtqzym/video/upload/v1782842309/VN20260630_221231_kkxorv.mp4",
+    problem: "Managing dozens of online accounts often leads to weak or reused passwords, while storing credentials in plain text or third-party services introduces additional security risks.",
+    solution: "Built a self-hosted password vault with a web interface that securely generates, encrypts, stores, and manages credentials locally using authenticated access and encrypted storage.",
+    features: [
+      "Master password authentication for secure vault access",
+      "Fernet encryption for storing credentials securely",
+      "Generate, search, add, update, and delete saved passwords",
+      "Encrypted backup and restore with MySQL-backed storage"
+    ],
+    techStack: ["Python", "FastAPI", "Streamlit", "MySQL", "Cryptography (Fernet)"],
+    github: "https://github.com/Mohammed-Zain-py/python-password-vault",
+  },
+
+  "5": {
     title: "Personalized Handwriting Generator",
     image: handwritingImage,
     problem: "Standard digital text lacks the personal touch and authenticity of real handwriting for creative projects, e-greetings, or digital signatures.",
@@ -82,7 +113,7 @@ const projectsData: { [key: string]: any } = {
     github: "https://github.com/Mohammed-Zain-py/Personalized-Handwriting-Generator",
   },
 
-  "5": {
+  "6": {
     title: "Sonar-Based Object Classification",
     image: sonarImage,
     problem: "Manually distinguishing between underwater objects like rocks and metallic mines from sonar data is slow, difficult, and has a high margin of error.",
@@ -96,7 +127,7 @@ const projectsData: { [key: string]: any } = {
     techStack: ["Python", "Pandas", "Scikit-learn", "Machine Learning"],
   },
 
-  "6": {
+  "7": {
     title: "Movie Recommendation System",
     image: movieImage,
     problem: "With thousands of available options, users often struggle to find new movies that are genuinely tailored to their specific tastes, leading to decision fatigue.",
@@ -110,7 +141,7 @@ const projectsData: { [key: string]: any } = {
     techStack: ["Python", "Pandas", "Scikit-learn", "NLTK", "Data Science"],
   },
   
-  "7": {
+  "8": {
     title: "Mini Game Collection",
     image: gamesImage,
     problem: "A need to demonstrate core programming fundamentals, logic, and Object-Oriented Programming (OOP) principles in a practical, interactive, and self-contained project.",
